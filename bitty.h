@@ -9,6 +9,6 @@ std::bitset<8> _8bit(Datatype value){
 }
 
 TEMPLATE
-std::bitset<16> _16Bit(){
+std::bitset<16> _16bit(Datatype value){
     return std::bitset<16>(value);
 }
