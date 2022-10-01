@@ -37,5 +37,5 @@ int main(){
         cin >> a;
         cout << "Factorial of " << a << " is: " << factorial(a) << endl;
     }
-    return 100;
+    return 0;
 }
