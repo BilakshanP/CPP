@@ -1,5 +1,5 @@
 #include "bitty.h"
-#include "print.h"
+#include "io.h"
 
 template <typename Datatype>
 void printBinary(Datatype Value){
