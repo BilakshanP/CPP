@@ -1,41 +1,39 @@
-// #include <iostream>
-// 
-// int main(){
-//     {
-//         using namespace std;
-// 
-//         int a, i{1}, fact{1};
-//
-//         cout << "Enter the number to find factorial of: ";
-//         cin >> a;
-// 
-//         for(i; i <= a; i++){
-//             fact = fact * i;
-//         }
-// 
-//         cout << "The factorial of " << a << " is: " << fact << endl;
-//     }
-//     return 0;
-// }
+#include "headers/io.h"
 
-#include <iostream>
+int looping_factorial(int number){
+    int fact{1};
 
-int factorial(int n){
+    for(int i{2}; i <= number; i++){
+        fact *= i;
+    }
+
+    return fact;
+}
+
+int recursive_factorial(int n){
     if(n < 2){
         return 1;
     }
-    return n * factorial(n-1);
+    return n * recursive_factorial(n-1);
 }
 
 int main(){
     {
         using namespace std;
 
-        int a;
+        int num;
 
-        cout << "Enter the number to find factorial of: ";
-        cin >> a;
-        cout << "Factorial of " << a << " is: " << factorial(a) << endl;
+        num = int_in("Enter a number to find factorial of: ");
+        print("Factorial of ", "");
+        print(num, " is: ");
+
+        print("");
+
+        print("    1. Recursive factorial: ", "");
+        print(recursive_factorial(num));
+
+        print("    2. Looping factorial: ", "");
+        print(looping_factorial(num));
     }
     return 0;
 }
