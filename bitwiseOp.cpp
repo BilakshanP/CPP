@@ -1,4 +1,4 @@
-#include "bitty.h"
+#include "headers/bitty.h"
 #include "headers/io.h"
 
 template <typename Datatype>

@@ -1,4 +1,3 @@
-#include <iostream>
 #include <bitset>
 
 #define TEMPLATE template <typename Datatype>
