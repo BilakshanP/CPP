@@ -18,22 +18,18 @@ int recursive_factorial(int n){
 }
 
 int main(){
-    {
-        using namespace std;
+    int num;
 
-        int num;
+    num = int_in("Enter a number to find factorial of: ");
+    print("Factorial of ", "");
 
-        num = int_in("Enter a number to find factorial of: ");
-        print("Factorial of ", "");
-        print(num, " is: ");
+    print(num, " is: ");
+    print("");
 
-        print("");
+    print("    1. Recursive factorial: ", "");
+    print(recursive_factorial(num));
+    print("    2. Looping factorial: ", "");
+    print(looping_factorial(num));
 
-        print("    1. Recursive factorial: ", "");
-        print(recursive_factorial(num));
-
-        print("    2. Looping factorial: ", "");
-        print(looping_factorial(num));
-    }
     return 0;
 }

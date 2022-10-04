@@ -7,4 +7,6 @@ int main(){
 
     print(integer);
     print(string2);     // prints TTest
+
+    return 0;
 }

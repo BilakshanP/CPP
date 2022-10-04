@@ -40,4 +40,6 @@ int main(){
     print("6. shift >> 3:             ", "");
     print(val1 >> 3, " and in binary is: ");
     printBinary(val1 >> 3);
+
+    return 0;
 }

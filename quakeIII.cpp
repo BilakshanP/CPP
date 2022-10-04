@@ -25,4 +25,6 @@ float invsqrt(float number){
 int main(){
     print(invsqrt(999));
     print(1/sqrt(999));
+
+	return 0;
 }

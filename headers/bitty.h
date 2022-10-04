@@ -15,7 +15,7 @@ std::bitset<16> _16bit(Datatype value){     // 2 bytes
 TEMPLATE
 std::bitset<32> _32bit(Datatype value){     // 4 bytes
     return std::bitset<32>(value);
-}
+} 
 
 TEMPLATE
 std::bitset<64> _64bit(Datatype value){     // 8 bytes

@@ -11,4 +11,6 @@ int main(){
         print(i, " = ");
         print(number*i);
     }
+
+    return 0;
 }
