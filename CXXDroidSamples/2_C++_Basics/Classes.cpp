@@ -1,3 +1,5 @@
+// Square area computation example with classes usage
+
 #include "../../headers/io.h"
 
 class Poly{
