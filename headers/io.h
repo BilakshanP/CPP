@@ -1,17 +1,20 @@
 #include <iostream>
 
+using ::std::cout;
+using ::std::cin;
+
 template <typename Datatype>
 void print(Datatype value, const char* end="\n"){
     end ?: end = "\n";
-    std::cout << value << end;
+    cout << value << end;
 }
 
 template <typename Datatype>
 int int_in(Datatype value){
     int number;
 
-    std::cout << value;
-    std::cin >> number;
+    cout << value;
+    cin >> number;
 
     return number;
 }

@@ -3,8 +3,8 @@
 
 float invsqrt(float number){
 	long i;
-	float x2{number*0.5}, y{number};
-	const float threehalfs = 1.5;	   // 1.5F? idk why
+	float x2{number*0.5F}, y{number};
+	const float threehalfs = 1.5F;	   // F == float
 
 	i  = *(long *) &y;                 /* making address of y as a long and then
 	                                      copying its contents to an actual long */
